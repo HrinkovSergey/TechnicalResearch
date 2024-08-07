@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.arraylist.ArrayListService;
+import com.example.hashmap.HashMapService;
 
 import java.util.*;
 
@@ -36,7 +37,8 @@ public class Main {
     public static void main(String[] args) {
         ArrayListService arrayListService = new ArrayListService();
         arrayListService.workWithArrayList();
-
+        HashMapService hashMapService = new HashMapService();
+        hashMapService.workWithHashMap();
 
 //        System.out.println("-----------------------\n    ArrayList:    \n-----------------------");
 //        workWithArrayList();
@@ -44,18 +46,8 @@ public class Main {
 //        workWithHashMap();
 
 
-//        List<String> arrayList = new ArrayList<>();
-////        Set<String> strings = new HashSet<>();
-//        arrayList.add("first");
-//        arrayList.add("second");
-//        arrayList.add("third");
-//        System.out.println(arrayList);
-//
-//        arrayList.remove(1);
-//        System.out.println(arrayList);
-//        arrayList.add(1, "new second");
-//
-//        System.out.println(arrayList);
+
+
 //        Map<Integer, String> stringHashTable = new Hashtable<>();
 //        Map<String, Integer> stringMap = new HashMap<>();
 //        String string = "BLAKE";
@@ -76,23 +68,6 @@ public class Main {
 //        System.out.println(linkedList.get(1));
     }
 
-    private static void workWithHashMap() {
-        String string = "BLAKE";
-        String string2 = "KING";
-        System.out.println(string.hashCode());
-        System.out.println(string2.hashCode());
-        System.out.println(hash(string));
-        System.out.println(hash(string2));
-    }
-
-    public static int hash(Object key) {
-        int h;
-        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
-    }
-
-    public static int getIndex(int hash, int arraySize){
-        return  (arraySize - 1) & hash;
-    }
 
     private static void log(List<String> arrayList) {
         System.out.println("arrayList: " + arrayList);
