@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.arraylist.ArrayListService;
 import com.example.hashmap.HashMapService;
+import com.example.linkedlist.LinkedListService;
 
 import java.util.*;
 
@@ -39,40 +40,7 @@ public class Main {
         arrayListService.workWithArrayList();
         HashMapService hashMapService = new HashMapService();
         hashMapService.workWithHashMap();
-
-//        System.out.println("-----------------------\n    ArrayList:    \n-----------------------");
-//        workWithArrayList();
-//        System.out.println("-----------------------\n    HashMap:    \n-----------------------");
-//        workWithHashMap();
-
-
-
-
-//        Map<Integer, String> stringHashTable = new Hashtable<>();
-//        Map<String, Integer> stringMap = new HashMap<>();
-//        String string = "BLAKE";
-//        String string2 = "KING";
-//        System.out.println(string.hashCode());
-//        System.out.println(string2.hashCode());
-//        System.out.println(hash(string));
-//        System.out.println(hash(string2));
-//        System.out.println(getIndex(hash(string), 16));
-//        System.out.println(getIndex(hash(string2), 16));
-//        stringMap.put("BLAKE", 10);
-//        stringMap.put("KING", 100);
-//        System.out.println(stringMap.entrySet());
-//        System.out.println(stringMap.get("BLAKE"));
-//        List<String> linkedList = new LinkedList<>();
-//        linkedList.add("pedik");
-//        linkedList.add("loh");
-//        System.out.println(linkedList.get(1));
+        LinkedListService linkedListService = new LinkedListService();
+        linkedListService.workWithLinkedList();
     }
-
-
-    private static void log(List<String> arrayList) {
-        System.out.println("arrayList: " + arrayList);
-        System.out.println("size: " + arrayList.size());
-    }
-
-
 }
