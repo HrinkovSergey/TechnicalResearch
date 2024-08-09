@@ -3,8 +3,7 @@ package com.example;
 import com.example.arraylist.ArrayListService;
 import com.example.hashmap.HashMapService;
 import com.example.linkedlist.LinkedListService;
-
-import java.util.*;
+import com.example.vector.VectorService;
 
 /*
                                       Iterable - have -> Iterator                             Map<----------
@@ -38,9 +37,14 @@ public class Main {
     public static void main(String[] args) {
         ArrayListService arrayListService = new ArrayListService();
         arrayListService.workWithArrayList();
+
         HashMapService hashMapService = new HashMapService();
         hashMapService.workWithHashMap();
+
         LinkedListService linkedListService = new LinkedListService();
         linkedListService.workWithLinkedList();
+
+        VectorService vectorService = new VectorService();
+        vectorService.workWithVector();
     }
 }
