@@ -1,5 +1,8 @@
 package com.example.hashmap;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class HashMapService {
 
     private static final String SEPARATOR = "------------------";
@@ -7,6 +10,7 @@ public class HashMapService {
     public void workWithHashMap() {
         System.out.println("-----------------------\n    HashMap:    \n-----------------------");
         showHash();
+        showCollision();
         showPut();
     }
     private void showHash() {
@@ -39,7 +43,7 @@ public class HashMapService {
     }
 
 
-    private void showPut() {
+    private void showCollision() {
         String firstElement = "BLAKE";
         String secondElement = "KING";
         System.out.println("firstElement: " + firstElement);
@@ -53,6 +57,20 @@ public class HashMapService {
         System.out.println("hash(secondElement): " + hash(secondElement) + "\n");
         System.out.println("getIndex(hash(secondElement), 16): ");
         System.out.println("Map index of element: " + getIndex(hash(secondElement), 16) + "\n" + SEPARATOR);
+    }
+
+    private void showPut() {
+        System.out.println("    Put:    ");
+        String firstElement = "PETER";
+        String secondElement = "VASILIY";
+        System.out.println("firstElement: " + firstElement);
+        System.out.println("secondElement: " + secondElement);
+        Map<String, Integer> map = new HashMap<>();
+        map.put(firstElement, 1);
+        map.put(secondElement, 2);
+        System.out.println("map: " + map);
+        System.out.println("map: " + map.entrySet());
+
     }
 
     private int hash(Object key) {
