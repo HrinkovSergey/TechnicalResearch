@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.arraylist.ArrayListService;
 import com.example.hashmap.HashMapService;
+import com.example.hashmap.LinkedHashMapService;
 import com.example.linkedlist.LinkedListService;
 import com.example.vector.VectorService;
 
@@ -46,5 +47,8 @@ public class Main {
 
         VectorService vectorService = new VectorService();
         vectorService.workWithVector();
+
+        LinkedHashMapService linkedHashMapService = new LinkedHashMapService();
+        linkedHashMapService.workWithLinkedHashMap();
     }
 }
