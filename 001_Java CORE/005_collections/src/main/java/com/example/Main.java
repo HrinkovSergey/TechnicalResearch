@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.arraydeque.ArrayDequeService;
 import com.example.arraylist.ArrayListService;
 import com.example.hashmap.HashMapService;
 import com.example.hashmap.LinkedHashMapService;
@@ -50,5 +51,8 @@ public class Main {
 
         LinkedHashMapService linkedHashMapService = new LinkedHashMapService();
         linkedHashMapService.workWithLinkedHashMap();
+
+        ArrayDequeService arrayDequeService = new ArrayDequeService();
+        arrayDequeService.work();
     }
 }
