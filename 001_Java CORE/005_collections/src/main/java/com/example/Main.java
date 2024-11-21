@@ -5,6 +5,7 @@ import com.example.arraylist.ArrayListService;
 import com.example.hashmap.HashMapService;
 import com.example.hashmap.LinkedHashMapService;
 import com.example.linkedlist.LinkedListService;
+import com.example.sortedmap.TreeMapService;
 import com.example.vector.VectorService;
 
 /*
@@ -54,5 +55,8 @@ public class Main {
 
         ArrayDequeService arrayDequeService = new ArrayDequeService();
         arrayDequeService.work();
+
+        TreeMapService sortedHashMapService = new TreeMapService();
+        sortedHashMapService.work();
     }
 }
